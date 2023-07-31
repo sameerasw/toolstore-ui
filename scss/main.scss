@@ -27,6 +27,10 @@ body{
     }
 }
 
+.header{
+    margin-top: 15px;
+}
+
 .nav__list{
     height: 60vh;
     display: flex;
@@ -122,4 +126,16 @@ body{
     width: 15%;
     top: 30px;
     right: 15px;
+}
+
+#map{
+    height: 40vh;
+    background-color: #a1a1a1;
+    border-radius: 10px;
+}
+
+.search-icon{
+    position: relative;
+    top: -32px;
+    left: 440px;
 }

@@ -1,125 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Tool Store</title>
-</head>
-<body>
-    <div class="nav">
-        <div class="container my-5">
-            <div class="column">
-                <div class="col-lg-10">
-                    <ul class="nav__list">
-                        <div id="logo"><span class="material-symbols-rounded rounded-pill">shop</span></div>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill active" type="button"><span class="material-symbols-rounded">home</span></button></a></li>
-                        <li class="nav__list-item"><a href="inventory.html"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">storage</span></button></a></li>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">bookmark</span></button></a></li>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">people</span></button></a></li>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">approval_delegation</span></button></a></li>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">archive</span></button></a></li>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded"><span class="material-symbols-rounded">campaign</span></span></button></a></li>
-                        <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">store</span></button></a></li>
-                        <!-- <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">chat</span></button></a></li> -->
-                        <a href="#" id="chat__button"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded"><span class="material-symbols-rounded">chat</span></span></button></a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-8">
-                <h1>Dashboard</h1>
-                <span>Hello Sameera!</span>
-            </div>
-            <div class="col-4 header-right">
-                <input type="text" class="form-control rounded-pill" id="search" placeholder="search">
-                <button type="button" class="btn btn-primary rounded-pill" id="search-button"
-                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                        <span class="material-symbols-rounded">
-                            search
-                            </span>
-                </button>
-                <button class="btn btn-primary rounded-pill">🔔</button>
-                <button class="btn btn-primary rounded-pill">👤</button>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="view">
-        <div class="row">
-            <div class="card col p-4 m-2">
-                <h4>Total Sales and Cost</h4>
-                <p>Last 90 days</p>
-                <div class="card-body">
-                    <canvas id="chLine"></canvas>
-                </div>
-            </div>
-            <div class="card col p-4 m-2">
-                <h4>Orders</h4>
-                <p>Last 90 days</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card col-8 p-4 m-2">
-                <h4>Stocks</h4>
-                <p>Updated 2 minutes ago</p>
-                <button type="button" class="btn btn-primary rounded-pill card-button">+ Add Stock</button>
-                <div class="cards row" id="stock-cards-container">
-                    <div class="stock-card card col-6 p-3">
-                        <span><b>Item 001</b>   12,451</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="stock-card card col-6 p-3">
-                        <span><b>Item 001</b>   12,451</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards row" id="stock-cards-container">
-                    <div class="stock-card card col-6 p-3">
-                        <span><b>Item 001</b>   12,451</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="stock-card card col-6 p-3">
-                        <span><b>Item 001</b>   12,451</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Tool Store</title>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="container my-5">
+                <div class="column">
+                    <div class="col-lg-10">
+                        <ul class="nav__list">
+                            <div id="logo"><span class="material-symbols-rounded rounded-pill">shop</span></div>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill active" type="button"><span class="material-symbols-rounded">home</span></button></a></li>
+                            <li class="nav__list-item"><a href="inventory.html"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">storage</span></button></a></li>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">bookmark</span></button></a></li>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">people</span></button></a></li>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">approval_delegation</span></button></a></li>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">archive</span></button></a></li>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded"><span class="material-symbols-rounded">campaign</span></span></button></a></li>
+                            <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">store</span></button></a></li>
+                            <!-- <li class="nav__list-item"><a href="#"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded">chat</span></button></a></li> -->
+                            <a href="#" id="chat__button"><button class="btn btn-primary rounded-pill" type="button"><span class="material-symbols-rounded"><span class="material-symbols-rounded">chat</span></span></button></a>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="card col p-4 m-2">
-                <h4>Demand and Supply</h4>
-                <p>Last 90 days</p>
+        </div>
+        <div class="container header">
+            <div class="row align-items-center">
+                <div class="col-8">
+                    <h1>Dashboard</h1>
+                    <span>Hello Sameera!</span>
+                </div>
+                <div class="col-4 header-right">
+                    <input type="text" class="form-control rounded-pill" id="search" placeholder="search">
+                    <button type="button" class="btn btn-primary rounded-pill" id="search-button"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                            <span class="material-symbols-rounded">
+                                search
+                                </span>
+                    </button>
+                    <button class="btn btn-primary rounded-pill">🔔</button>
+                    <button class="btn btn-primary rounded-pill">👤</button>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="card col-5 p-4 m-2">
-                <h4>Next Supply Arrival - Materials</h4>
-                <p>In 2 days</p>
-                <span class="material-symbols-rounded card-button">package</span>
+        <div class="container" id="view">
+            <div class="row">
+                <div class="card col p-4 m-2">
+                    <h4>Total Sales and Cost</h4>
+                    <p>Last 90 days</p>
+                    <div class="card-body">
+                        <canvas id="chLine"></canvas>
+                    </div>
+                </div>
+                <div class="card col p-4 m-2">
+                    <h4>Orders</h4>
+                    <p>Last 90 days</p>
+                </div>
             </div>
-            <div class="card col-5 p-4 m-2">
-                <h4>Upcoming HR Meeting</h4>
-                <p>Today at 3:00pm - Google Meet</p>
-                <span class="material-symbols-rounded card-button">schedule</span>
+            <div class="row">
+                <div class="card col-8 p-4 m-2">
+                    <h4>Stocks</h4>
+                    <p>Updated 2 minutes ago</p>
+                    <button type="button" class="btn btn-primary rounded-pill card-button">+ Add Stock</button>
+                    <div class="cards row" id="stock-cards-container">
+                        <div class="stock-card card col-6 p-3">
+                            <span><b>Item 001</b>   12,451</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="stock-card card col-6 p-3">
+                            <span><b>Item 001</b>   12,451</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards row" id="stock-cards-container">
+                        <div class="stock-card card col-6 p-3">
+                            <span><b>Item 001</b>   12,451</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="stock-card card col-6 p-3">
+                            <span><b>Item 001</b>   12,451</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col p-4 m-2">
+                    <h4>Demand and Supply</h4>
+                    <p>Last 90 days</p>
+                </div>
             </div>
-            <div class="card col p-4 m-2">
-                <h4>Calendar</h4>
-                <span class="material-symbols-rounded card-button">calendar_month</span>
+            <div class="row">
+                <div class="card col-5 p-4 m-2">
+                    <h4>Next Supply Arrival - Materials</h4>
+                    <p>In 2 days</p>
+                    <span class="material-symbols-rounded card-button">package</span>
+                </div>
+                <div class="card col-5 p-4 m-2">
+                    <h4>Upcoming HR Meeting</h4>
+                    <p>Today at 3:00pm - Google Meet</p>
+                    <span class="material-symbols-rounded card-button">schedule</span>
+                </div>
+                <div class="card col p-4 m-2">
+                    <h4>Calendar</h4>
+                    <span class="material-symbols-rounded card-button">calendar_month</span>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="./node_modules/bootstrap/js/"></script>
-    <script src="./js/script.js"></script>
-</body>
+        <script src="./node_modules/bootstrap/js/"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
