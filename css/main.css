@@ -11858,6 +11858,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  height: 100%;
+}
+
 .nav {
   position: fixed;
   z-index: 100;
@@ -11955,5 +11959,23 @@ textarea.form-control-lg {
   margin: 2% auto;
 }
 #view div {
-  justify-content: center;
+  justify-content: space-between;
+}
+
+#stock-cards-container {
+  justify-content: space-between;
+}
+#stock-cards-container .stock-card {
+  background-color: #dddddd;
+  border-radius: 10px;
+}
+#stock-cards-container .stock-card span {
+  text-align: justify;
+}
+
+.card-button {
+  position: absolute;
+  width: 15%;
+  top: 30px;
+  right: 15px;
 }/*# sourceMappingURL=main.css.map */

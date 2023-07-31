@@ -2,6 +2,10 @@ $primary : #3870ff;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+body{
+    height: 100%;
+}
+
 .nav{
     position: fixed;
     z-index: 100;
@@ -98,6 +102,24 @@ $primary : #3870ff;
     height: 100%;
     margin: 2% auto ;
     div{
-        justify-content: center;
+        justify-content: space-between;
     }
+}
+
+#stock-cards-container{
+    justify-content: space-between;
+    .stock-card{
+        background-color: #dddddd;
+        border-radius: 10px;
+        span{
+        text-align: justify;
+    }
+} 
+}
+
+.card-button{
+    position: absolute;
+    width: 15%;
+    top: 30px;
+    right: 15px;
 }
