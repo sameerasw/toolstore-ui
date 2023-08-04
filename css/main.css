@@ -11990,8 +11990,27 @@ body {
   border-radius: 10px;
 }
 
+.items {
+  overflow-y: scroll;
+  height: 20vh;
+}
+
+#search-inventory {
+  width: 100%;
+}
+
 .search-icon {
   position: relative;
-  top: -32px;
-  left: 440px;
+  float: right;
+  top: -38px;
+  right: 10px;
+}
+
+.items .card {
+  background-color: #eeeeee;
+}
+
+#dropdownMenuButton {
+  background-color: #ffffff;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
