@@ -4,6 +4,12 @@ $primary : #3870ff;
 
 body{
     height: 100%;
+    background-color: #dddddd;
+}
+
+.card{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 
 .nav{
@@ -28,17 +34,18 @@ body{
 }
 
 .header{
-    margin-top: 15px;
+    padding-top: 15px;
+    
 }
 
 .nav__list{
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-}
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
 
 .material-symbols-rounded{
     font-size: 2rem;
@@ -190,4 +197,14 @@ body{
 .table-body{
     overflow-y: scroll;
     height:600px;
+}
+
+.dash-buttons span{
+    color: $primary;
+}
+
+#map{
+    background-image: url("../resources/img/manual-warehouse.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

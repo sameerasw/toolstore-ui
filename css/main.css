@@ -11860,6 +11860,12 @@ textarea.form-control-lg {
 }
 body {
   height: 100%;
+  background-color: #dddddd;
+}
+
+.card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .nav {
@@ -11884,7 +11890,7 @@ body {
 }
 
 .header {
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .nav__list {
@@ -12040,4 +12046,14 @@ body {
 .table-body {
   overflow-y: scroll;
   height: 600px;
+}
+
+.dash-buttons span {
+  color: #3870ff;
+}
+
+#map {
+  background-image: url("../resources/img/manual-warehouse.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
