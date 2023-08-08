@@ -11980,7 +11980,7 @@ body {
 .card-button {
   position: absolute;
   width: 15%;
-  top: 30px;
+  top: 20px;
   right: 15px;
 }
 
@@ -12039,5 +12039,5 @@ body {
 
 .table-body {
   overflow-y: scroll;
-  min-height: 60vh;
+  height: 600px;
 }/*# sourceMappingURL=main.css.map */

@@ -52,10 +52,13 @@
         <div class="container" id="view">
             <div class="row">
                 <div class="card col p-4 m-2">
+                    <div class="card-button w-25 text-center"><h4 class="text-white m-0 bg-primary rounded-pill p-2">$256.82K</h4>(+5.23K last 90 days)</div>
                     <h4>Total Sales and Cost</h4>
                     <p>Last 90 days</p>
                     <div class="card-body">
-                        <canvas id="chLine"></canvas>
+                        <div class="card chart-container">
+                          <canvas id="chart"></canvas>
+                        </div>
                     </div>
                 </div>
                 <div class="card col p-4 m-2">
@@ -121,5 +124,7 @@
         </div>
         <script src="./node_modules/bootstrap/js/"></script>
         <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="./js/chart.js"></script>
     </body>
 </html>
