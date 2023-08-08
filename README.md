@@ -1,9 +1,7 @@
 # toolstore-ui
 A training project of a UI dashboard front-end.
 
-### UI Demonstration
-
-https://github.com/sameerasw/toolstore-ui/assets/68902530/820d1518-7688-452f-9d26-248a1686bc4a
+[//]: # (https://github.com/sameerasw/toolstore-ui/assets/68902530/820d1518-7688-452f-9d26-248a1686bc4a)
 
 ---
 
@@ -37,11 +35,9 @@ https://github.com/sameerasw/toolstore-ui/assets/68902530/820d1518-7688-452f-9d2
 
 ---
 
-### Figma Design
 
 ![image](https://github.com/sameerasw/toolstore-ui/assets/68902530/181aad6b-4115-42d9-a2fd-e02ef35ccb4c)
 
 ![image](https://github.com/sameerasw/toolstore-ui/assets/68902530/e37a11da-780a-4353-83ed-7422621e3386)
 
-[Complete Figma design of the UI](https://www.figma.com/proto/Glk8FQP2i3mITYKazZZm3H/Tool-Store---Dashboard?page-id=0%3A1&type=design&node-id=1-2&viewport=134%2C593%2C0.14&t=U6Obat1zJbQVwEmP-1&scaling=scale-down&starting-point-node-id=1%3A4145&show-proto-sidebar=1&mode=design)
 
