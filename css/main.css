@@ -11959,11 +11959,11 @@ body {
 }
 
 #view {
-  height: 100%;
-  margin: 2% auto;
+  margin: 1% auto;
 }
-#view div {
-  justify-content: space-between;
+
+.searchbar {
+  height: 65px;
 }
 
 #stock-cards-container {
@@ -11995,7 +11995,7 @@ body {
   height: 20vh;
 }
 
-#search-inventory {
+.search-inventory {
   width: 100%;
 }
 
@@ -12013,4 +12013,31 @@ body {
 #dropdownMenuButton {
   background-color: #ffffff;
   color: #000000;
+}
+
+.counter-buttons {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 2px;
+  text-align: center;
+}
+
+.counter-cards {
+  margin: 2% 0;
+}
+
+.icon-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.orders-view span {
+  color: #3870ff;
+}
+
+.table-body {
+  overflow-y: scroll;
+  min-height: 60vh;
 }/*# sourceMappingURL=main.css.map */
