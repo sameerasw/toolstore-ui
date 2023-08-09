@@ -1,0 +1,14 @@
+$primary : #3870ff;
+$white : #ffffff;
+$black : #000000;
+$gray : #dddddd;
+$dark-gray : #a1a1a1;
+$transition : all 0.3s ease-in-out;
+
+:export {
+  primary: $primary;
+  white: $white;
+  black: $black;
+  gray: $gray;
+  dark-gray: $dark-gray;
+}

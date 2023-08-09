@@ -1,10 +1,10 @@
-$primary : #3870ff;
+@import "./variables";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 body{
     height: 100%;
-    background-color: #dddddd;
+    background-color: $gray;
 }
 
 .card{
@@ -16,26 +16,40 @@ body{
     position: fixed;
     z-index: 100;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: $white;
     align-items: center;
     border-radius: 10px;
     li{
         list-style: none;
         a{
-            color: #000000;
+            color: $black;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: 600;
             padding: 0.5rem 0.5rem;
             border-radius: 5px;
-            transition: all 0.3s ease-in-out;
+            transition: $transition;
         }
     }
 }
 
 .header{
     padding-top: 15px;
-    
+
+    .header-right{
+        display: flex;
+        flex-direction: row;
+
+        #search-button{
+            position: relative;
+            left: -60px;
+        }
+        
+        #search{
+            width: 60%;
+        }
+    }
+   
 }
 
 .nav__list{
@@ -45,26 +59,39 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 0 1rem;
+
+        .active{
+            background-color: $primary;
+            color: $white;
+            .material-symbols-rounded{
+                color: $white;
+            }
+        }
+
+        #chat__button{
+            position: fixed;
+            bottom: 20px;
+            z-index: 100;
+        }
+
+        #logo{
+            position: fixed;
+            top: 20px;
+            z-index: 100;
+            height: 50px;
+            width: 50px;
+            border: none;
+            transition: all 0.3s ease-in-out;
+            background-color: $gray;
+            border-radius: 50%;
+            padding: 10px;
+        }
     }
 
 .material-symbols-rounded{
     font-size: 2rem;
-    color: #000000;
+    color: $black;
     cursor: pointer;
-}
-
-#search{
-    width: 60%;
-}
-
-.header-right{
-    display: flex;
-    flex-direction: row;
-}
-
-#search-button{
-    position: relative;
-    left: -60px;
 }
 
 .nav button, .header-right button{
@@ -72,59 +99,32 @@ body{
     width: 50px;
     border: none;
     transition: all 0.3s ease-in-out;
-    background-color: #dfdfdf;
+    background-color: $gray;
     padding: 10px;
     margin: 5px;
     border-radius: 50%;
     &:hover{
-        background-color: #a1a1a1;
-        color: #ffffff;
+        background-color: $dark-gray;
+        color: $white;
     }
-}
-
-.active{
-    background-color: #009bf5;
-    color: #ffffff;
-    .material-symbols-rounded{
-        color: #ffffff;
-    }
-}
-
-#chat__button{
-    position: fixed;
-    bottom: 20px;
-    z-index: 100;
-}
-
-#logo{
-    position: fixed;
-    top: 20px;
-    z-index: 100;
-    height: 50px;
-    width: 50px;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    background-color: #dfdfdf;
-    border-radius: 50%;
-    padding: 10px;
 }
 
 #view{
-    // height: 100%;
     margin: 1% auto ;
-    // div{
-    //      justify-content: space-between;
-    // }
-}
 
-.searchbar{
-    height:65px;
+    #map{
+        height: 40vh;
+        border-radius: 10px;
+        background-image: url("../resources/img/manual-warehouse.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 #stock-cards-container{
     justify-content: space-between;
     .stock-card{
-        background-color: #dddddd;
+        background-color: $gray;
         border-radius: 10px;
         span{
         text-align: justify;
@@ -137,12 +137,6 @@ body{
     width: 15%;
     top: 20px;
     right: 15px;
-}
-
-#map{
-    height: 40vh;
-    background-color: #a1a1a1;
-    border-radius: 10px;
 }
 
 .items{
@@ -162,25 +156,24 @@ body{
 }
 
 .items .card{
-    background-color: #eeeeee;
+    background-color: $gray;
 }
 
 #dropdownMenuButton{
-    background-color: #ffffff;
-    color: #000000
-}
-
-.counter-buttons{
-    background-color: #eeeeee;
-    padding: 10px;
-    border-radius: 20px;
-    margin:2px;
-    text-align: center;
+    background-color: $white;
+    color: $black
 }
 
 .counter-cards{
-    // height: 45%;
     margin: 2% 0;
+    
+    .counter-buttons{
+        background-color: $gray;
+        padding: 10px;
+        margin: 2%;
+        border-radius: 20px;
+        text-align: center;
+    }
 }
 
 .icon-cards{
@@ -201,10 +194,4 @@ body{
 
 .dash-buttons span{
     color: $primary;
-}
-
-#map{
-    background-image: url("../resources/img/manual-warehouse.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
